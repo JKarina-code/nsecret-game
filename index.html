@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Secret Number Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__content">
+        <div class="container__information">
+          <div class="container__text">
+            <h1></h1>
+            <p class="text__paragraph"></p>
+          </div>
+          <input
+            type="number"
+            id="valueUser"
+            min="1"
+            max="10"
+            class="container__input"
+            placeholder="Add a number"
+          />
+          <div class="container__buttons">
+            <button onclick="tried();" class="container__button">
+              Attempt
+            </button>
+            <button
+              onclick="restart();"
+              class="container__button"
+              id="restart"
+              disabled
+            >
+              New Game
+            </button>
+          </div>
+        </div>
+        <img
+          src="./assets/ia.png"
+          alt="A person looking to the left"
+          class="container__image-person"
+        />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
